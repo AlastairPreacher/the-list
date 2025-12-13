@@ -816,7 +816,12 @@ function fetchPlaylistTracks(playlist) {
                     console.log('no track at', i);
                 }
             });
-            return Q.all([fetchAllAlbums(aids), fetchAudioFeatures(ids)]);
+            // Fetch audio features - gracefully handle 403 for new apps without access
+            var audioFeaturesPromise = fetchAudioFeatures(ids).catch(function(err) {
+                console.log('Audio Features API unavailable (expected for new Spotify apps created after Nov 2024):', err);
+                return { audio_features: [] }; // Return empty features to allow playlist to load
+            });
+            return Q.all([fetchAllAlbums(aids), audioFeaturesPromise]);
         })
         .then(function(results) {
             var allAlbums = results[0];
