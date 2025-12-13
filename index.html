@@ -1195,47 +1195,61 @@ function initTable() {
     return table;
 }
 
-$(document).ready(
+// Handle OAuth callback asynchronously
+async function handleOAuthCallback(queryParams) {
+    try {
+        console.log("DEBUG: Starting OAuth callback handling");
+        info("Completing authorization...");
+        accessToken = await exchangeCodeForToken(queryParams.code);
+        console.log("DEBUG: Token received successfully");
 
-    async function() {
+        // Clear the code from URL to prevent reuse
+        window.history.replaceState({}, document.title, window.location.pathname);
+
+        $(".worker").hide();
+        fetchCurrentUserProfile(function(user) {
+            if (user) {
+                curUserID = user.id;
+                $("#who").text(user.id);
+                loadPlaylists(user.id);
+            } else {
+                error("Trouble getting the user profile");
+            }
+        });
+    } catch (err) {
+        console.error('Token exchange error:', err);
+        error("Failed to complete authorization. Please try again.");
+        $("#go").show();
+        $("#go").on('click', function() {
+            console.log("DEBUG: Login button clicked");
+            authorizeUser().catch(err => console.error("Auth error:", err));
+        });
+    }
+}
+
+$(document).ready(function() {
+        console.log("DEBUG: Document ready fired");
         songTable = initTable();
         var args = parseArgs();
         var queryParams = parseQueryString();
 
+        console.log("DEBUG: Query params:", queryParams);
+        console.log("DEBUG: Has code?", 'code' in queryParams);
+
         // Check for authorization code (PKCE flow)
         if ('code' in queryParams) {
-            try {
-                info("Completing authorization...");
-                accessToken = await exchangeCodeForToken(queryParams.code);
-
-                // Clear the code from URL to prevent reuse
-                window.history.replaceState({}, document.title, window.location.pathname);
-
-                $(".worker").hide();
-                fetchCurrentUserProfile(function(user) {
-                    if (user) {
-                        curUserID = user.id;
-                        $("#who").text(user.id);
-                        loadPlaylists(user.id);
-                    } else {
-                        error("Trouble getting the user profile");
-                    }
-                });
-            } catch (err) {
-                console.error('Token exchange error:', err);
-                error("Failed to complete authorization. Please try again.");
-                $("#go").show();
-                $("#go").on('click', function() {
-                    authorizeUser();
-                });
-            }
+            console.log("DEBUG: Authorization code detected, handling callback");
+            handleOAuthCallback(queryParams);
         } else if ('error' in args || 'error' in queryParams) {
+            console.log("DEBUG: Error in callback");
             error("Sorry, I can't read your playlists from Spotify without authorization");
             $("#go").show();
             $("#go").on('click', function() {
-                authorizeUser();
+                console.log("DEBUG: Login button clicked (error state)");
+                authorizeUser().catch(err => console.error("Auth error:", err));
             });
         } else if ('access_token' in args) {
+            console.log("DEBUG: Legacy access token flow");
             // Legacy flow (shouldn't happen with new code, but keep for safety)
             accessToken = args['access_token'];
             $(".worker").hide();
@@ -1249,9 +1263,11 @@ $(document).ready(
                 }
             });
         } else {
+            console.log("DEBUG: No auth state, showing login button");
             $("#go").show();
             $("#go").on('click', function() {
-                authorizeUser();
+                console.log("DEBUG: Login button clicked (initial state)");
+                authorizeUser().catch(err => console.error("Auth error:", err));
             });
         }
 
