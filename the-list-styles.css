@@ -267,7 +267,7 @@
   align-items: center;
   gap: 12px;
   padding: 6px 0;
-  min-width: 250px;
+  min-width: 200px;
 }
 
 .album-artwork {
@@ -308,8 +308,8 @@
 /* Track column styling */
 #song-table th:nth-child(2),
 #song-table td:nth-child(2) {
-  min-width: 250px;
-  max-width: 400px;
+  min-width: 200px;
+  max-width: 300px;
   padding: 8px 12px;
 }
 
