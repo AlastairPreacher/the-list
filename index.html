@@ -199,8 +199,13 @@
                                     <label for="include-double">Include doubled BPM</label>
                                     <input id="include-double" type="checkbox" checked="checked">
                                 </div>
+                                <div class="form-group">
+                                    <button id="toggle-audio-columns" class="btn btn-secondary btn-sm">
+                                        Show Audio Columns
+                                    </button>
+                                </div>
                                  <!--
-                                 <button id="shuffle-button" class="pull-right btn btn-primary btn-sm">Shuffle</button> 
+                                 <button id="shuffle-button" class="pull-right btn btn-primary btn-sm">Shuffle</button>
                                  -->
                             </div>
                         </div>
@@ -1308,6 +1313,42 @@ $(document).ready(function() {
         $('#min-bpm,#max-bpm,#include-double').on('keyup change', function() {
             songTable.draw();
             updateSaveButtonState();
+        });
+
+        // Toggle audio columns visibility
+        var audioColumnsVisible = localStorage.getItem('audioColumnsVisible') === 'true';
+        var audioColumnIndices = [3, 4, 5, 6, 7, 9]; // BPM, Energy, Dance, Loud, Valence, Acoustic
+
+        function hideAudioColumns() {
+            audioColumnIndices.forEach(function(colIndex) {
+                songTable.column(colIndex).visible(false);
+            });
+            $('#toggle-audio-columns').text('Show Audio Columns');
+            localStorage.setItem('audioColumnsVisible', 'false');
+        }
+
+        function showAudioColumns() {
+            audioColumnIndices.forEach(function(colIndex) {
+                songTable.column(colIndex).visible(true);
+            });
+            $('#toggle-audio-columns').text('Hide Audio Columns');
+            localStorage.setItem('audioColumnsVisible', 'true');
+        }
+
+        // Set initial state (hide by default)
+        if (!audioColumnsVisible) {
+            setTimeout(function() {
+                hideAudioColumns();
+            }, 100);
+        }
+
+        $('#toggle-audio-columns').on('click', function() {
+            audioColumnsVisible = !audioColumnsVisible;
+            if (audioColumnsVisible) {
+                showAudioColumns();
+            } else {
+                hideAudioColumns();
+            }
         });
 
         // Initialize Firebase and custom systems
