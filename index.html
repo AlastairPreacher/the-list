@@ -210,6 +210,7 @@
                         <thead>
                             <tr>
                                 <th title="original track order"> # </th>
+                                <th title="album artwork"> Art </th>
                                 <th title="the title of the track"> Title </th>
                                 <th title="the primary artist of the track"> Artist </th>
                                 <th title="date of release"> Release</th>
@@ -737,6 +738,15 @@ function updateCommentCell(rowIndex, playlistId, trackId, comments) {
 }
 
 function addTrack(table,track) {
+    // Get album artwork URL (use smallest image for performance)
+    var artworkUrl = '';
+    if (track.album && track.album.images && track.album.images.length > 0) {
+        // Use smallest image (usually last in array), fallback to first if needed
+        var images = track.album.images;
+        artworkUrl = images[images.length - 1].url || images[0].url;
+    }
+    var artworkHtml = artworkUrl ? `<img src="${artworkUrl}" class="album-artwork" alt="Album art">` : '';
+
     if (track && track.enInfo && 'tempo' in track.enInfo) {
         var relDate = '';
         if (track.album.id in albumDates) {
@@ -744,6 +754,7 @@ function addTrack(table,track) {
         }
         table.row.add([
                 track.which + 1,
+                artworkHtml, // Album artwork
                 track.name,
                 track.artists[0].name,
                 relDate,
@@ -765,6 +776,7 @@ function addTrack(table,track) {
     } else {
         table.row.add([
                 track.which + 1,
+                artworkHtml, // Album artwork
                 track.name,
                 track.artists[0].name,
                 '',
@@ -1175,7 +1187,7 @@ function initTable() {
             info:false,
             dom:"t", // only show table (exclude search bar)
             columnDefs: [
-                { type : "time-uni", targets:9},
+                { type : "time-uni", targets:10}, // Length column (shifted by 1 due to artwork column)
             ]
      });
 
