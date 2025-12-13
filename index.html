@@ -210,9 +210,7 @@
                         <thead>
                             <tr>
                                 <th title="original track order"> # </th>
-                                <th title="album artwork"> Art </th>
-                                <th title="the title of the track"> Title </th>
-                                <th title="the primary artist of the track"> Artist </th>
+                                <th title="track info with artwork"> Track </th>
                                 <th title="date of release"> Release</th>
                                 <th title="the tempo, in beats-per-minute of the track"> BPM </th>
                                 <th title="the overall energy of the track"> Energy </th>
@@ -738,14 +736,23 @@ function updateCommentCell(rowIndex, playlistId, trackId, comments) {
 }
 
 function addTrack(table,track) {
-    // Get album artwork URL (use smallest image for performance)
+    // Create combined track cell with artwork + title + artist
     var artworkUrl = '';
     if (track.album && track.album.images && track.album.images.length > 0) {
         // Use smallest image (usually last in array), fallback to first if needed
         var images = track.album.images;
         artworkUrl = images[images.length - 1].url || images[0].url;
     }
-    var artworkHtml = artworkUrl ? `<img src="${artworkUrl}" class="album-artwork" alt="Album art">` : '';
+
+    var trackHtml = `
+        <div class="track-cell">
+            ${artworkUrl ? `<img src="${artworkUrl}" class="album-artwork" alt="Album art">` : ''}
+            <div class="track-info">
+                <div class="track-title">${track.name}</div>
+                <div class="track-artist">${track.artists[0].name}</div>
+            </div>
+        </div>
+    `;
 
     if (track && track.enInfo && 'tempo' in track.enInfo) {
         var relDate = '';
@@ -754,9 +761,7 @@ function addTrack(table,track) {
         }
         table.row.add([
                 track.which + 1,
-                artworkHtml, // Album artwork
-                track.name,
-                track.artists[0].name,
+                trackHtml, // Combined artwork + title + artist
                 relDate,
                 Math.round(track.enInfo.tempo),
                 Math.round(track.enInfo.energy * 100),
@@ -776,9 +781,7 @@ function addTrack(table,track) {
     } else {
         table.row.add([
                 track.which + 1,
-                artworkHtml, // Album artwork
-                track.name,
-                track.artists[0].name,
+                trackHtml, // Combined artwork + title + artist
                 '',
                 '',
                 '',
@@ -1187,7 +1190,7 @@ function initTable() {
             info:false,
             dom:"t", // only show table (exclude search bar)
             columnDefs: [
-                { type : "time-uni", targets:10}, // Length column (shifted by 1 due to artwork column)
+                { type : "time-uni", targets:8}, // Length column (combined Track column reduced total)
             ]
      });
 
