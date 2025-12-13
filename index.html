@@ -201,7 +201,7 @@
                                 </div>
                                 <div class="form-group">
                                     <button id="toggle-audio-columns" class="btn btn-secondary btn-sm">
-                                        Show Audio Columns
+                                        Show Empty Columns
                                     </button>
                                 </div>
                                  <!--
@@ -1315,39 +1315,41 @@ $(document).ready(function() {
             updateSaveButtonState();
         });
 
-        // Toggle audio columns visibility
-        var audioColumnsVisible = localStorage.getItem('audioColumnsVisible') === 'true';
-        var audioColumnIndices = [3, 4, 5, 6, 7, 9]; // BPM, Energy, Dance, Loud, Valence, Acoustic
+        // Toggle empty columns visibility
+        var emptyColumnsVisible = localStorage.getItem('emptyColumnsVisible') === 'true';
+        // Hide all empty columns: Release, BPM, Energy, Dance, Loud, Valence, Acoustic, Pop, A.Sep, Rnd
+        // Keep visible: # (0), Track (1), Length (8), Rating (13), Comments (14)
+        var emptyColumnIndices = [2, 3, 4, 5, 6, 7, 9, 10, 11, 12]; // Release, BPM, Energy, Dance, Loud, Valence, Acoustic, Pop, A.Sep, Rnd
 
-        function hideAudioColumns() {
-            audioColumnIndices.forEach(function(colIndex) {
+        function hideEmptyColumns() {
+            emptyColumnIndices.forEach(function(colIndex) {
                 songTable.column(colIndex).visible(false);
             });
-            $('#toggle-audio-columns').text('Show Audio Columns');
-            localStorage.setItem('audioColumnsVisible', 'false');
+            $('#toggle-audio-columns').text('Show Empty Columns');
+            localStorage.setItem('emptyColumnsVisible', 'false');
         }
 
-        function showAudioColumns() {
-            audioColumnIndices.forEach(function(colIndex) {
+        function showEmptyColumns() {
+            emptyColumnIndices.forEach(function(colIndex) {
                 songTable.column(colIndex).visible(true);
             });
-            $('#toggle-audio-columns').text('Hide Audio Columns');
-            localStorage.setItem('audioColumnsVisible', 'true');
+            $('#toggle-audio-columns').text('Hide Empty Columns');
+            localStorage.setItem('emptyColumnsVisible', 'true');
         }
 
         // Set initial state (hide by default)
-        if (!audioColumnsVisible) {
+        if (!emptyColumnsVisible) {
             setTimeout(function() {
-                hideAudioColumns();
+                hideEmptyColumns();
             }, 100);
         }
 
         $('#toggle-audio-columns').on('click', function() {
-            audioColumnsVisible = !audioColumnsVisible;
-            if (audioColumnsVisible) {
-                showAudioColumns();
+            emptyColumnsVisible = !emptyColumnsVisible;
+            if (emptyColumnsVisible) {
+                showEmptyColumns();
             } else {
-                hideAudioColumns();
+                hideEmptyColumns();
             }
         });
 
