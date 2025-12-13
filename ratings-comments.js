@@ -169,37 +169,16 @@
       });
   };
 
-  // Attach event listeners to rating stars in a container
+  // Attach event listeners to rating stars in a container (legacy - kept for compatibility)
   window.attachRatingEventListeners = function(container) {
-    const stars = container.querySelectorAll('.star');
-    stars.forEach(star => {
-      star.addEventListener('click', function() {
-        handleStarClick(this);
-      });
-    });
+    // No longer needed - event delegation handles this
+    // Kept as empty function to avoid breaking existing code
   };
 
-  // Attach event listeners to comment inputs in a container
+  // Attach event listeners to comment inputs in a container (legacy - kept for compatibility)
   window.attachCommentEventListeners = function(container) {
-    const submitBtns = container.querySelectorAll('.comment-submit-btn');
-    submitBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
-        handleCommentSubmit(this);
-      });
-    });
-
-    const inputs = container.querySelectorAll('.comment-input');
-    inputs.forEach(input => {
-      input.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-          e.preventDefault();
-          const submitBtn = this.nextElementSibling;
-          if (submitBtn) {
-            handleCommentSubmit(submitBtn);
-          }
-        }
-      });
-    });
+    // No longer needed - event delegation handles this
+    // Kept as empty function to avoid breaking existing code
   };
 
   // Escape HTML to prevent XSS
@@ -209,13 +188,39 @@
     return div.innerHTML;
   }
 
-  // Initialize ratings and comments system
+  // Initialize ratings and comments system with event delegation
   window.initializeRatingsCommentsSystem = function() {
-    // Attach event listeners to all existing rating and comment elements
-    attachRatingEventListeners(document);
-    attachCommentEventListeners(document);
+    console.log('Initializing ratings and comments system with event delegation...');
 
-    console.log('Ratings and comments system initialized');
+    // Use event delegation - attach ONE listener to document that catches all star clicks
+    // This works even when DataTables dynamically updates cells
+    document.addEventListener('click', function(e) {
+      // Check if clicked element is a star
+      if (e.target.classList.contains('star')) {
+        console.log('Star clicked:', e.target);
+        handleStarClick(e.target);
+      }
+
+      // Check if clicked element is a comment submit button
+      if (e.target.classList.contains('comment-submit-btn')) {
+        console.log('Comment button clicked:', e.target);
+        handleCommentSubmit(e.target);
+      }
+    });
+
+    // Handle Enter key in comment inputs
+    document.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter' && e.target.classList.contains('comment-input')) {
+        e.preventDefault();
+        const submitBtn = e.target.nextElementSibling;
+        if (submitBtn && submitBtn.classList.contains('comment-submit-btn')) {
+          console.log('Comment submitted via Enter key');
+          handleCommentSubmit(submitBtn);
+        }
+      }
+    });
+
+    console.log('Ratings and comments system initialized with event delegation');
   };
 
 })();
