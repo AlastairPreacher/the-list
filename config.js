@@ -1,6 +1,5 @@
 "use strict";
 
-var SPOTIFY_CLIENT_ID = '31469b011d4941bf8dd4ac9cf8495bac';
-var SPOTIFY_REDIRECT_URI = 'http://localhost:8000/';
-// var SPOTIFY_REDIRECT_URI = 'http://sortyourmusic.playlistmachinery.com/';  // Commented out for local testing
+var SPOTIFY_CLIENT_ID = '67c3ecd2d9eb4fa59663aff21f6e4298';  // FlowState app
+var SPOTIFY_REDIRECT_URI = 'https://alastairpreacher.github.io/the-list/';
 
