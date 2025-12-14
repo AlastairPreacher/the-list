@@ -1249,8 +1249,14 @@ async function handleOAuthCallback(queryParams) {
         accessToken = await exchangeCodeForToken(queryParams.code);
         console.log("DEBUG: Token received successfully");
 
-        // Initialize Spotify Player with new token
-        initializeSpotifyPlayer();
+        // Initialize player if SDK is already loaded (window.Spotify exists)
+        // Otherwise, window.onSpotifyWebPlaybackSDKReady will initialize it when SDK loads
+        if (typeof Spotify !== 'undefined') {
+            console.log('SDK already loaded, initializing player now');
+            initializeSpotifyPlayer();
+        } else {
+            console.log('SDK not loaded yet, will initialize via onSpotifyWebPlaybackSDKReady callback');
+        }
 
         // Clear the code from URL to prevent reuse
         window.history.replaceState({}, document.title, window.location.pathname);
