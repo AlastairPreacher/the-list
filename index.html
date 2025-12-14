@@ -1196,7 +1196,11 @@ function initTable() {
             dom:"t", // only show table (exclude search bar)
             autoWidth: false, // Disable auto width calculation - use CSS widths instead
             columnDefs: [
-                { type : "time-uni", targets:8}, // Length column (combined Track column reduced total)
+                { type : "time-uni", targets:8}, // Length column
+                { width: "50px", targets: 0 },   // # column
+                { width: "280px", targets: 1 },  // Track column (album art + title/artist)
+                { width: "220px", targets: 13 }, // Rating column
+                { width: "300px", targets: 14 }, // Comments column
             ]
      });
 
