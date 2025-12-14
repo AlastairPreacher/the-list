@@ -826,7 +826,7 @@ function fetchPlaylistTracks(playlist) {
                         if (item.track && item.track.id) {
                             ids.push(item.track.id);
                         }
-                        if (!(_.includes(aids, item.track.album.id))) {
+                        if (!(_.contains(aids, item.track.album.id))) {
                             if (!(item.track.album.id in albumDates)) {
                                 aids.push(item.track.album.id);
                             }
