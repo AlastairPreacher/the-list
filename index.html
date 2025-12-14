@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link type="text/css" href="styles.css?v1" rel="stylesheet" />
-    <link type="text/css" href="the-list-styles.css" rel="stylesheet" />
+    <link type="text/css" href="the-list-styles.css?v2" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.13.1/datatables.min.css"/>
     <link href="dist/sp-bootstrap.min.css" rel="stylesheet" media="screen">
@@ -1317,9 +1317,9 @@ $(document).ready(function() {
 
         // Toggle empty columns visibility
         var emptyColumnsVisible = localStorage.getItem('emptyColumnsVisible') === 'true';
-        // Hide all empty columns: Release, BPM, Energy, Dance, Loud, Valence, Acoustic, Pop, A.Sep, Rnd
-        // Keep visible: # (0), Track (1), Length (8), Rating (13), Comments (14)
-        var emptyColumnIndices = [2, 3, 4, 5, 6, 7, 9, 10, 11, 12]; // Release, BPM, Energy, Dance, Loud, Valence, Acoustic, Pop, A.Sep, Rnd
+        // Hide all empty columns: Release, BPM, Energy, Dance, Loud, Valence, Length, Acoustic, Pop, A.Sep, Rnd
+        // Keep visible: # (0), Track (1), Rating (13), Comments (14)
+        var emptyColumnIndices = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; // Release, BPM, Energy, Dance, Loud, Valence, Length, Acoustic, Pop, A.Sep, Rnd
 
         function hideEmptyColumns() {
             emptyColumnIndices.forEach(function(colIndex) {
