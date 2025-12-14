@@ -1,0 +1,1919 @@
+{
+  "summary": {
+    "total_tracks": 167,
+    "tracks_with_preview": 0,
+    "tracks_without_preview": 167,
+    "coverage_percentage": 0.0
+  },
+  "tracks": [
+    {
+      "name": "Run",
+      "id": "16iHE1uKRvAKd1Mt13udlV",
+      "artists": [
+        "MPH",
+        "EV",
+        "Chris Lorenzo"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 193777,
+      "album": "Substance"
+    },
+    {
+      "name": "NOW",
+      "id": "2957N2fOpFu3HhAAyrzzoz",
+      "artists": [
+        "Oppidan"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 204545,
+      "album": "MY NAME IS OPP!"
+    },
+    {
+      "name": "ABC's",
+      "id": "5VEhGGpGA38ZiQRXhWgOTG",
+      "artists": [
+        "MPH",
+        "AntsLive"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 178285,
+      "album": "Substance"
+    },
+    {
+      "name": "Just Like",
+      "id": "7irbhODkTYtv3aTOze7ts1",
+      "artists": [
+        "MPH"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 205454,
+      "album": "Refraction"
+    },
+    {
+      "name": "DARWIN",
+      "id": "24caY3L0inVduxmvqNfrzj",
+      "artists": [
+        "Oppidan"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 238297,
+      "album": "MY NAME IS OPP!"
+    },
+    {
+      "name": "Raw",
+      "id": "2U9RtZORzcu54vkWI19PIL",
+      "artists": [
+        "MPH"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 192121,
+      "album": "Raw"
+    },
+    {
+      "name": "one2three (feat. Leven Kali)",
+      "id": "6dQxsPVLqXnJgiLLWJRE5x",
+      "artists": [
+        "Disclosure",
+        "Chris Lake",
+        "Leven Kali"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 248578,
+      "album": "one2three (feat. Leven Kali)"
+    },
+    {
+      "name": "A Place You Wanna Go (Good Life)",
+      "id": "0aDKvLIttZfWCA0zFjVn92",
+      "artists": [
+        "bullet tooth"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 184791,
+      "album": "A Place You Wanna Go (Good Life)"
+    },
+    {
+      "name": "Bump That",
+      "id": "5yUtKWNHogX0A6LdE7SgU0",
+      "artists": [
+        "BRUX",
+        "Frazer Ray"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 239250,
+      "album": "Bump That"
+    },
+    {
+      "name": "Dappa Dan",
+      "id": "6atT69esWSadQ7Ujx27Z3l",
+      "artists": [
+        "Y U QT",
+        "Diffrent"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 248391,
+      "album": "Dappa Dan"
+    },
+    {
+      "name": "IMMACULATE SKANK",
+      "id": "678ey4hhnfoCIRYbQ9dTwc",
+      "artists": [
+        "bullet tooth"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 222500,
+      "album": "IMMACULATE SKANK"
+    },
+    {
+      "name": "Fool Me Twice",
+      "id": "7JClWYi1C90K4OmS9TyJ6V",
+      "artists": [
+        "BAKEY"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 236454,
+      "album": "Fool Me Twice"
+    },
+    {
+      "name": "Until The Morning",
+      "id": "2uFTRPIOJCAv3VPDdpQB85",
+      "artists": [
+        "MPH"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 202666,
+      "album": "Until The Morning"
+    },
+    {
+      "name": "Get Dumb",
+      "id": "3UZn0r01qyD1UqckgmIsll",
+      "artists": [
+        "Sammy Virji",
+        "MPH"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 235000,
+      "album": "Get Dumb"
+    },
+    {
+      "name": "Clocked It Got Long (Bonus Track)",
+      "id": "3myHWah51kXTH8KrDg4eGC",
+      "artists": [
+        "Bailey Ibbs"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 333323,
+      "album": "Volta"
+    },
+    {
+      "name": "I Cannot",
+      "id": "7rgnKPJ51NBGP5k20yaSHn",
+      "artists": [
+        "Anti Up"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 189499,
+      "album": "I Cannot"
+    },
+    {
+      "name": "LOSE YOUR HEAD",
+      "id": "3iWarmifsPD56ys6TBuN9N",
+      "artists": [
+        "Kelly Lee Owens"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 195689,
+      "album": "KELLY"
+    },
+    {
+      "name": "Fogo",
+      "id": "4GVLHnuLDa5VlnFGE8FlDe",
+      "artists": [
+        "Yo Speed"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 300109,
+      "album": "Fogo"
+    },
+    {
+      "name": "How You Move - Edit",
+      "id": "1biKqdOsiIo2JekJ8UPX1x",
+      "artists": [
+        "Charlotte de Witte"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 169614,
+      "album": "How You Move"
+    },
+    {
+      "name": "Blade",
+      "id": "1wQwTyocYlAE27QEk8BQXa",
+      "artists": [
+        "D'Angello & Francis"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 168000,
+      "album": "Blade"
+    },
+    {
+      "name": "Aluga",
+      "id": "0IKZozc89S4bydkrr66ZCG",
+      "artists": [
+        "Ma Sha"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 253000,
+      "album": "Hydrofall"
+    },
+    {
+      "name": "Try & Escape",
+      "id": "0cNDDA6wf2JRpLaKDcPMPl",
+      "artists": [
+        "Zero"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 188142,
+      "album": "BANGERS ONLY"
+    },
+    {
+      "name": "Comin",
+      "id": "2NTaAUg7XX76RPBQKyWzM0",
+      "artists": [
+        "Kink"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 306289,
+      "album": "Versions"
+    },
+    {
+      "name": "JOYTOY",
+      "id": "2TZ2uBFfyGaB8a664Nd10V",
+      "artists": [
+        "Artonal"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 184285,
+      "album": "JOYTOY"
+    },
+    {
+      "name": "Watch Your Pin",
+      "id": "0RXaZZjZsgdVKJgLWIfQ7Z",
+      "artists": [
+        "Povoa"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 226502,
+      "album": "NPT"
+    },
+    {
+      "name": "GET TWISTED",
+      "id": "1FIh7Npu1egJ3cWV6kKUyo",
+      "artists": [
+        "SICARIA",
+        "Lou Nour"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 190500,
+      "album": "ANTI NIHILO"
+    },
+    {
+      "name": "Career Advice",
+      "id": "400yp7PlC9LLPqX5Gi8M8D",
+      "artists": [
+        "HYBRD",
+        "Alan Fitzpatrick"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 188497,
+      "album": "Career Advice"
+    },
+    {
+      "name": "Convolve",
+      "id": "2DdNWzLRyxw0aY8XztQ2Qx",
+      "artists": [
+        "Bowser"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 228022,
+      "album": "Convolve"
+    },
+    {
+      "name": "Flump",
+      "id": "6OSswcrCIZz2D93uC8z9vh",
+      "artists": [
+        "Cesco"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 250746,
+      "album": "Flump"
+    },
+    {
+      "name": "Lose My Mind",
+      "id": "1LdRvKZka9ZHunz6eoH5B9",
+      "artists": [
+        "Champion",
+        "Interplanetary Criminal",
+        "Crookers"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 199411,
+      "album": "Lose My Mind"
+    },
+    {
+      "name": "Dominator",
+      "id": "7oZ8KZELVocU8WY2Ye7b3x",
+      "artists": [
+        "Boys Noize",
+        "Human Resource"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 239951,
+      "album": "Dominator"
+    },
+    {
+      "name": "Jump Up Quickly - Zero Remix",
+      "id": "50RMgtg1y4rolRtEdinzlO",
+      "artists": [
+        "Mungo's Hi Fi",
+        "Zero",
+        "Soom T"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 260868,
+      "album": "Jump Up Quickly (Zero Remix)"
+    },
+    {
+      "name": "Alarm Bells - Efan Remix",
+      "id": "7pPBJJ2pNJTbJ43ccomWdk",
+      "artists": [
+        "Manga Saint Hilare",
+        "MoreNight",
+        "P Money",
+        "Jme",
+        "efan"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 229333,
+      "album": "Everything Is Under Control (Deluxe Edition)"
+    },
+    {
+      "name": "IO",
+      "id": "2WAVAcW9TlnkChZrXj5W4K",
+      "artists": [
+        "Schwefelgelb"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 326627,
+      "album": "Trigger"
+    },
+    {
+      "name": "Afterparty",
+      "id": "2ozUtemjsy7OuFo5BHoVn8",
+      "artists": [
+        "CLIFFORD"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 160377,
+      "album": "Afterparty"
+    },
+    {
+      "name": "I\u2019m Really Hot (For Myself)",
+      "id": "0Ot136xJA9ghl1JR5eaaVS",
+      "artists": [
+        "Mura Masa"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 208506,
+      "album": "I\u2019m Really Hot (For Myself)"
+    },
+    {
+      "name": "Party Rock",
+      "id": "2OwVcCUZa2C08NVIPyZM6j",
+      "artists": [
+        "DJ Fuckoff"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 218482,
+      "album": "Party Rock"
+    },
+    {
+      "name": "Moaner",
+      "id": "42MDEG1z2DNSAtx8y0jZ6u",
+      "artists": [
+        "Underworld"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 461200,
+      "album": "Beaucoup Fish (Remastered / Super Deluxe)"
+    },
+    {
+      "name": "E After Next",
+      "id": "1yb4K5pUkIfRZIw32ZaTvx",
+      "artists": [
+        "Avalon Emerson",
+        "Moby"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 239179,
+      "album": "E After Next"
+    },
+    {
+      "name": "Tambourine",
+      "id": "3eIhHWOMaTAPvJ6azg0b2L",
+      "artists": [
+        "The Dare"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 209470,
+      "album": "Tambourine"
+    },
+    {
+      "name": "Beat Bunny",
+      "id": "03aGl91oeW7EZolJTFFNlM",
+      "artists": [
+        "Povoa",
+        "Madge"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 194626,
+      "album": "Beat Bunny"
+    },
+    {
+      "name": "Block Rockin' Beats - Don Diablo Remix",
+      "id": "4mIQn3WT3fW0XqaMVRvMl0",
+      "artists": [
+        "The Chemical Brothers",
+        "Don Diablo"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 187743,
+      "album": "Block Rockin' Beats (Don Diablo Remix)"
+    },
+    {
+      "name": "Onda",
+      "id": "4tHMwlnLreWjSR3rPQ2Vsr",
+      "artists": [
+        "Piezo",
+        "Priori"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 355890,
+      "album": "Onda"
+    },
+    {
+      "name": "SPEAKERS - VIP MIX",
+      "id": "33I46YeNNJZRNPACu26swQ",
+      "artists": [
+        "Hyas",
+        "Pura Pura"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 196113,
+      "album": "NO MORE AFTERPARTIES"
+    },
+    {
+      "name": "Too Slow (All Night)",
+      "id": "4ywDQlrX9XdJB19bvl3cvU",
+      "artists": [
+        "Eliza Rose",
+        "Oppidan"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 171444,
+      "album": "Too Slow (All Night)"
+    },
+    {
+      "name": "Come With It - Bumpty Mix",
+      "id": "6lMhz0W9cF8vjSVzA0KZBP",
+      "artists": [
+        "Sam Binga"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 219067,
+      "album": "Big With It"
+    },
+    {
+      "name": "Expand",
+      "id": "7c5FCKhwGFvHiqQfUwrdPd",
+      "artists": [
+        "Nitepunk",
+        "Harrison Clayton"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 242608,
+      "album": "Lawless EP"
+    },
+    {
+      "name": "Bend Ya Back",
+      "id": "6GYlRam9f1LNxZbR7gYqi9",
+      "artists": [
+        "Prozak"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 297000,
+      "album": "Bend Ya Back"
+    },
+    {
+      "name": "Metronome - Mixed",
+      "id": "6NUGmgqaG8Sj1N0LtOFScU",
+      "artists": [
+        "Yo Speed"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 123428,
+      "album": "Efecto Psicod\u00e9lico, Vol. 2"
+    },
+    {
+      "name": "Say Less",
+      "id": "5dItRJ9nTweovbE8YPeQwu",
+      "artists": [
+        "Bailey Ibbs"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 274338,
+      "album": "Say Less"
+    },
+    {
+      "name": "whats bitting you?",
+      "id": "2FcehqMAl5ANMenA1TlCA6",
+      "artists": [
+        "Vladimir Dubyshkin"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 242000,
+      "album": "whats bitting you?"
+    },
+    {
+      "name": "Navalha",
+      "id": "5eC8qs7v1Rw6U0T7mTNVA8",
+      "artists": [
+        "N\u00f8rbak"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 350909,
+      "album": "Suave"
+    },
+    {
+      "name": "Get Ur Freak On",
+      "id": "3ehFMmXnxE1O5Gxi3yycAw",
+      "artists": [
+        "BEAUZ",
+        "JKRS",
+        "NIVEK"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 123870,
+      "album": "Get Ur Freak On"
+    },
+    {
+      "name": "We'll Be Back",
+      "id": "64ZSbsECsGeoZq8dhYkUiM",
+      "artists": [
+        "Charlie Boon"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 199354,
+      "album": "We'll Be Back"
+    },
+    {
+      "name": "Rocinha",
+      "id": "29Mw1mBFrgS7wKDnjdDO0F",
+      "artists": [
+        "Bombo Rosa"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 240891,
+      "album": "Rocinha"
+    },
+    {
+      "name": "Joss Bay - Club Mix",
+      "id": "6mQ9x7RD4raegntPkJOL6M",
+      "artists": [
+        "Kassian"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 190075,
+      "album": "Channels: Remixed"
+    },
+    {
+      "name": "Something In Me",
+      "id": "0Ck9XZ0Wia2hjwDY1Oh6A1",
+      "artists": [
+        "DJ Hybrid"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 282750,
+      "album": "Whistle Crew EP"
+    },
+    {
+      "name": "sealight",
+      "id": "0RBuMInsBUvxIirprg2U7Q",
+      "artists": [
+        "fia"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 231948,
+      "album": "sealight"
+    },
+    {
+      "name": "Like It - Randomer Remix",
+      "id": "18JusSAKIhWOuUiJNRxmqg",
+      "artists": [
+        "Purient",
+        "Randomer"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 238712,
+      "album": "Like It (Randomer Remix)"
+    },
+    {
+      "name": "The Realm",
+      "id": "5oUM6niJ1fzxxSTah13Osf",
+      "artists": [
+        "Charlotte de Witte"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 357444,
+      "album": "Charlotte de Witte"
+    },
+    {
+      "name": "CHROMA 011 A.L.O.E II",
+      "id": "61gCDJBdaNXE4sy9Xl2lvl",
+      "artists": [
+        "BICEP",
+        "B.D.B",
+        "Benjamin Damage"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 342893,
+      "album": "CHROMA 000"
+    },
+    {
+      "name": "Native Wit",
+      "id": "6G2VuvrfFsLddKNhxHdzfy",
+      "artists": [
+        "X CLUB."
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 285465,
+      "album": "Wrestling With New Technique"
+    },
+    {
+      "name": "All The DJs",
+      "id": "12iWPV4rYVfR8RftPMZd4W",
+      "artists": [
+        "Patrick Topping"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 226370,
+      "album": "All The DJs"
+    },
+    {
+      "name": "Different",
+      "id": "0FPxUQoBxCSY8Cze1BW0vs",
+      "artists": [
+        "Barry Can't Swim"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 206693,
+      "album": "Loner"
+    },
+    {
+      "name": "Something French",
+      "id": "3s9kEtw8SwAg4GTKlTcMcq",
+      "artists": [
+        "Getdown Services"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 180175,
+      "album": "Crumbs 2"
+    },
+    {
+      "name": "Keepmastik - Taiki Nulight Remix",
+      "id": "4egiouZis0RPnfHYOV5dAs",
+      "artists": [
+        "Phlegmatic Dogs",
+        "Taiki Nulight"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 249800,
+      "album": "Night Bass Remixed Vol. 2"
+    },
+    {
+      "name": "Faux - KiNK Remix",
+      "id": "6gxgweAnEAsI3fMWjnEjTJ",
+      "artists": [
+        "Blakkat",
+        "Kink"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 370440,
+      "album": "KiNK Remixes"
+    },
+    {
+      "name": "Love Up High",
+      "id": "4pkQ33FKph0gIczq2cf3CC",
+      "artists": [
+        "Pricila Diaz",
+        "Linkage"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 275545,
+      "album": "MOTRAXX VA, Vol. 1"
+    },
+    {
+      "name": "ASCEND",
+      "id": "20cOEyAbHE1aq1FUaPCs1N",
+      "artists": [
+        "Kelly Lee Owens"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 203195,
+      "album": "ASCEND"
+    },
+    {
+      "name": "Cabin Dance",
+      "id": "1T4bQrsOpmeNuOnvVFpAGo",
+      "artists": [
+        "Octo Octa"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 217240,
+      "album": "Cabin Dance"
+    },
+    {
+      "name": "Let Me Clear My Throat",
+      "id": "7dP5EtY64b0dWwcWXb8Xlq",
+      "artists": [
+        "Devault"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 161818,
+      "album": "Let Me Clear My Throat"
+    },
+    {
+      "name": "Lose Control",
+      "id": "29ckDhEsLydghxneMmTBLa",
+      "artists": [
+        "Crusy",
+        "David LeSal"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 172269,
+      "album": "Lose Control"
+    },
+    {
+      "name": "After Time - Adana Twins Remix",
+      "id": "7a8nnQeoQ7URKBellEdI1j",
+      "artists": [
+        "Nic Fanciulli",
+        "Adana Twins"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 236612,
+      "album": "After Time (Adana Twins Remix)"
+    },
+    {
+      "name": "Deadlock",
+      "id": "6QxthyU2TkJvKQ93bualUb",
+      "artists": [
+        "MPH"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 256000,
+      "album": "This is Night Bass: Vol. 12"
+    },
+    {
+      "name": "Allbarone",
+      "id": "041DJ4hUI6drOqYgLf3QQG",
+      "artists": [
+        "Baxter Dury",
+        "JGrrey"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 268626,
+      "album": "Allbarone"
+    },
+    {
+      "name": "Josephine",
+      "id": "0l7JCXzezE7Gm7muaklAaK",
+      "artists": [
+        "Daphni"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 293553,
+      "album": "Josephine"
+    },
+    {
+      "name": "One Chance",
+      "id": "0XnH6eXRTsSJoFQGUh0I6z",
+      "artists": [
+        "Cameo Blush"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 233454,
+      "album": "Grace In Motion"
+    },
+    {
+      "name": "Paradise Runner",
+      "id": "3L7TOZvbuTsxH5EM8LVHUZ",
+      "artists": [
+        "Overmono"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 276477,
+      "album": "Paradise Runner"
+    },
+    {
+      "name": "Insomnia - Disclosure's 2025 Edit",
+      "id": "4cgoqLcfYRBesDEmSVR1Ek",
+      "artists": [
+        "Faithless",
+        "Disclosure"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 260807,
+      "album": "Insomnia (Disclosure's 2025 Edit)"
+    },
+    {
+      "name": "Let Me Tell U SMTH",
+      "id": "35il5XJ3JrbzNRpSVIfBDa",
+      "artists": [
+        "A.M.C"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 246720,
+      "album": "X12"
+    },
+    {
+      "name": "Ouais Ouais Ouais",
+      "id": "1YAAcPkIJtn6N3PWBNvC33",
+      "artists": [
+        "Bok Bok"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 236128,
+      "album": "Blood Moon EP"
+    },
+    {
+      "name": "Ear Pressure",
+      "id": "0C8cFdVVVhAhsOomoNy3r5",
+      "artists": [
+        "Ma Sha"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 286438,
+      "album": "Ear Pressure"
+    },
+    {
+      "name": "Sinsahoi",
+      "id": "7yWsj3ZEgGVnAOk8ZNKmuQ",
+      "artists": [
+        "Dario Nunez",
+        "Javi Colina"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 279360,
+      "album": "House of Love"
+    },
+    {
+      "name": "Surrender",
+      "id": "0YBy9MSILEYi7XkaFFvUSi",
+      "artists": [
+        "RUZE",
+        "Josh Butler"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 208615,
+      "album": "RUZE & Friends"
+    },
+    {
+      "name": "Slinky - Bakery Edit",
+      "id": "7fFZLw5Oz27ul6vyh6KPWf",
+      "artists": [
+        "Dj Streaks"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 176022,
+      "album": "Slinky"
+    },
+    {
+      "name": "Business",
+      "id": "3B7DEjXs1lyFLHGqtxjSbq",
+      "artists": [
+        "Fold",
+        "cu.rve"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 291500,
+      "album": "Business"
+    },
+    {
+      "name": "Girls",
+      "id": "7m8wiHGjtlJ5UQvqiCjhV5",
+      "artists": [
+        "The Dare"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 119558,
+      "album": "What's Wrong With New York?"
+    },
+    {
+      "name": "NO CAP",
+      "id": "6zaeVCwnf3A9S8R7QfDHQW",
+      "artists": [
+        "Disclosure",
+        "Anderson .Paak"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 233734,
+      "album": "NO CAP"
+    },
+    {
+      "name": "Cvlt",
+      "id": "4pd7zQ0NowYvgd1yiOjrGu",
+      "artists": [
+        "Yo Speed"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 209290,
+      "album": "Cvlt"
+    },
+    {
+      "name": "Lick & Pop It",
+      "id": "46g7bpCuXApVHkB5VkuMWK",
+      "artists": [
+        "p-rallel"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 263526,
+      "album": "Lick & Pop It"
+    },
+    {
+      "name": "BEN",
+      "id": "4vpt0wptg6Od7vt4vyIx8h",
+      "artists": [
+        "Fakear",
+        "oOgo",
+        "Laaanky",
+        "Aksel Aksel",
+        "Club Nowadays"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 206554,
+      "album": "BEN"
+    },
+    {
+      "name": "Sweatbox",
+      "id": "7rrE7xPl4rE26gvcXagLf3",
+      "artists": [
+        "Harry Wills",
+        "Mikey Sebastian"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 166058,
+      "album": "Sweatbox"
+    },
+    {
+      "name": "Dumb Dumb",
+      "id": "5xQyNHNEDGqcYeWzIRDV0P",
+      "artists": [
+        "Decius"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 230666,
+      "album": "Decius Trax EP IV (7\" Versions)"
+    },
+    {
+      "name": "Revolution",
+      "id": "5DoVmmEKkp3UFY3VuFHZi4",
+      "artists": [
+        "Paranoid London"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 356481,
+      "album": "Talk Dirty / Revolution"
+    },
+    {
+      "name": "Decimated Driver - Dub",
+      "id": "1lGvMBVOrxSC5ipSz7XmBU",
+      "artists": [
+        "Paranoid London",
+        "Water Machine"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 376615,
+      "album": "Decimated Driver"
+    },
+    {
+      "name": "Trent - Knee Jerk Mix",
+      "id": "0g0SocdFIml7gacZB4X0DY",
+      "artists": [
+        "Hodge"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 255813,
+      "album": "Trent (Knee Jerk Mix)"
+    },
+    {
+      "name": "Limoncello - Club Mix",
+      "id": "3EiwiBeCuCbx2U36fmqPs8",
+      "artists": [
+        "Kassian"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 213333,
+      "album": "Channels: Remixed"
+    },
+    {
+      "name": "Push",
+      "id": "2lbXd90vTTuCUCZ6tKaxPl",
+      "artists": [
+        "Tony Dark Eyes"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 185196,
+      "album": "Push"
+    },
+    {
+      "name": "Push Up",
+      "id": "6CqfT2mBl9VLQhtqoyhOOh",
+      "artists": [
+        "Wax Motif",
+        "Kyle Watson",
+        "Scrufizzer"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 162346,
+      "album": "Push Up"
+    },
+    {
+      "name": "NONSTOP",
+      "id": "585I7WDRPBBNo1aLv9lOyH",
+      "artists": [
+        "Darby"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 181714,
+      "album": "NONSTOP"
+    },
+    {
+      "name": "Rigid Lord",
+      "id": "0zlBYfthuEV22L3DMhGiJu",
+      "artists": [
+        "Cesco",
+        "Nina"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 225856,
+      "album": "Rigid Lord"
+    },
+    {
+      "name": "Noontime Acid",
+      "id": "3DZFLZiKkMsTNJNrMt4cS5",
+      "artists": [
+        "G Jones",
+        "Eprom"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 204466,
+      "album": "Disk Utility"
+    },
+    {
+      "name": "Frankie Knuckles",
+      "id": "7Fkoz65bhhz0Nd11O3FHf7",
+      "artists": [
+        "X CLUB."
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 212173,
+      "album": "Frankie Knuckles"
+    },
+    {
+      "name": "Big Darg - Radio Edit",
+      "id": "0L7Azaj1FRd9WwpdUGWPq0",
+      "artists": [
+        "Sam Binga"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 173051,
+      "album": "Big With It"
+    },
+    {
+      "name": "What's a Girl to Do (Ineffekt's Glow Mix)",
+      "id": "3RnutgOQBOWMyK7ySRgI3r",
+      "artists": [
+        "Fatima Yamaha",
+        "Ineffekt"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 227897,
+      "album": "What's a Girl to Do (Remixes)"
+    },
+    {
+      "name": "Thirst",
+      "id": "7sD9Y6qy01sSMaR7XNVTDl",
+      "artists": [
+        "Bodhi"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 315963,
+      "album": "Fade"
+    },
+    {
+      "name": "Honey",
+      "id": "2wKwfXzNCAC7R2uCWhHVo9",
+      "artists": [
+        "Caribou"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 262827,
+      "album": "Honey"
+    },
+    {
+      "name": "SPILL",
+      "id": "663yx0o6mm0KXd3SMmtmdZ",
+      "artists": [
+        "Nitepunk",
+        "SOH SOH"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 211509,
+      "album": "SPILL"
+    },
+    {
+      "name": "Buss It Up",
+      "id": "44bZryGTugtQDMXPcF1PLW",
+      "artists": [
+        "Lemtom"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 213528,
+      "album": "ATW024"
+    },
+    {
+      "name": "House FM",
+      "id": "2doKqoV1Tniy0rwcnNAYoa",
+      "artists": [
+        "Hitty"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 216541,
+      "album": "House FM"
+    },
+    {
+      "name": "After Five",
+      "id": "4IQyORSJmEUrOFAdUvylW0",
+      "artists": [
+        "Luke Alessi"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 216253,
+      "album": "After Five"
+    },
+    {
+      "name": "At The End Of The Corridor",
+      "id": "0mBaNnnVdLIwvIaZxaXJqe",
+      "artists": [
+        "Atonism"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 383201,
+      "album": "At The End Of The Corridor EP"
+    },
+    {
+      "name": "Eyes Adjust To The Dark",
+      "id": "3mE8wI7ZNLCH3qik9NLpJa",
+      "artists": [
+        "Yan Cook"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 318868,
+      "album": "Eyes Adjust To The Dark"
+    },
+    {
+      "name": "No Division (feat. XSALT)",
+      "id": "6ia0ffeCVyDAX7KOeYLjH2",
+      "artists": [
+        "Charlotte de Witte",
+        "XSALT"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 366233,
+      "album": "Charlotte de Witte"
+    },
+    {
+      "name": "Hymn",
+      "id": "2OkW1IqUtKuy8EX11KAkDZ",
+      "artists": [
+        "Charlotte de Witte"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 493667,
+      "album": "Charlotte de Witte"
+    },
+    {
+      "name": "BATTERY OPERATED",
+      "id": "2P7fnktG0n0P0UN9wUgas9",
+      "artists": [
+        "Tigerblind"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 127994,
+      "album": "BATTERY OPERATED"
+    },
+    {
+      "name": "Testa Dura",
+      "id": "68i5RHU3ZVh6fNAugMJfSx",
+      "artists": [
+        "De Grandi"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 302876,
+      "album": "Testa Dura"
+    },
+    {
+      "name": "Sura",
+      "id": "3E0Bmo5cxbRAuuVWU9Jf8a",
+      "artists": [
+        "HYBRD",
+        "Alan Fitzpatrick"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 229500,
+      "album": "Emotions"
+    },
+    {
+      "name": "Slinky - IWF Edit",
+      "id": "6Bw9NsdiVXZtVTcJOE72gX",
+      "artists": [
+        "Dj Streaks"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 218000,
+      "album": "Slinky"
+    },
+    {
+      "name": "fresh to death",
+      "id": "13jHslgVNiG8ZxJ0T1ATCo",
+      "artists": [
+        "Nitepunk",
+        "dami"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 234821,
+      "album": "Lawless EP"
+    },
+    {
+      "name": "Fundamentals",
+      "id": "71nyVNWLOq9B82XUEl37zQ",
+      "artists": [
+        "Wordcolour"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 366084,
+      "album": "Fundamentals"
+    },
+    {
+      "name": "You Are A Machine",
+      "id": "0lIR8bTJsxUS0uIem7FURx",
+      "artists": [
+        "Client_03"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 309681,
+      "album": "Testbed Assembly"
+    },
+    {
+      "name": "Strictly Acid",
+      "id": "7gcO5sEQxbysuAMOd4lR0S",
+      "artists": [
+        "Hermeth"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 280816,
+      "album": "Lost My Meth"
+    },
+    {
+      "name": "Lose My Mind",
+      "id": "0b1Hl2o1a1Z2ScSvImmVDE",
+      "artists": [
+        "Darby",
+        "Strobez"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 164780,
+      "album": "Lose My Mind"
+    },
+    {
+      "name": "Decimated Driver - Vocal",
+      "id": "27EXHGT2jEOMLga825hwIH",
+      "artists": [
+        "Paranoid London",
+        "Water Machine"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 368000,
+      "album": "Decimated Driver"
+    },
+    {
+      "name": "No More",
+      "id": "63p8zpPPAfp2d59F436NFS",
+      "artists": [
+        "Josi Devil"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 361000,
+      "album": "No More"
+    },
+    {
+      "name": "Domingo Psicod\u00e9lico",
+      "id": "4SQCkjmTEM3qCQgh7ITrhe",
+      "artists": [
+        "Yo Speed"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 288695,
+      "album": "Deep Confessions (Album)"
+    },
+    {
+      "name": "Pull The Trigger (Extended)",
+      "id": "0MqtAjwaBBKvwfzLVh86Bz",
+      "artists": [
+        "BRUX"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 244548,
+      "album": "Ten"
+    },
+    {
+      "name": "Pump - Version A",
+      "id": "43wTDXzyyd8EhoBNOaeXgM",
+      "artists": [
+        "Kink"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 278465,
+      "album": "Pump (Version A)"
+    },
+    {
+      "name": "Hyperfizz",
+      "id": "5k6C9UpmMWVcZfRNHaRmOi",
+      "artists": [
+        "Icarus"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 194500,
+      "album": "Hyperfizz"
+    },
+    {
+      "name": "Hot Legs",
+      "id": "0bu6ES1Q4lA0WnMeXeImkm",
+      "artists": [
+        "Duckmaw"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 245250,
+      "album": "Hot Legs"
+    },
+    {
+      "name": "Freak",
+      "id": "4qBDSAPwmETaJ1TstCzIzB",
+      "artists": [
+        "p-rallel"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 238801,
+      "album": "SELECTA"
+    },
+    {
+      "name": "Feel Like U Wanna",
+      "id": "7g4g0VNf7MfBWBLTddNYet",
+      "artists": [
+        "Terry Moon"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 172666,
+      "album": "Feel Like U Wanna"
+    },
+    {
+      "name": "Modelizer",
+      "id": "1zfZ7aElZ3ZeM46P3CTtQE",
+      "artists": [
+        "The Dare"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 217224,
+      "album": "Freakquencies: Volume 1"
+    },
+    {
+      "name": "The Funky Beat - Original Mix",
+      "id": "7BRluEM6UWlFOySI65erHV",
+      "artists": [
+        "Angelo Dore"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 330001,
+      "album": "Minimal Tech Beats 006"
+    },
+    {
+      "name": "BIRDMAN LUGZ",
+      "id": "1BpBpokRKSpvYlPLA6am0y",
+      "artists": [
+        "DJ Swisha"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 231253,
+      "album": "FIRST HAND SMOKE"
+    },
+    {
+      "name": "Round & Round",
+      "id": "4TUtdlo0oQlA78q3Lxn4W8",
+      "artists": [
+        "Nic Fanciulli"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 405470,
+      "album": "Movin' On"
+    },
+    {
+      "name": "feels",
+      "id": "1NLZ9Q6P2m370hiNHXrOPk",
+      "artists": [
+        "Daitone"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 188760,
+      "album": "feels"
+    },
+    {
+      "name": "Captain Crunch - VIP",
+      "id": "1IGwiLIQdLzykutYKRLCa7",
+      "artists": [
+        "IMOGEN",
+        "Ben Pest"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 283267,
+      "album": "Hellangel"
+    },
+    {
+      "name": "Addict",
+      "id": "6GYJe1H82LfKdJFeBKr3fO",
+      "artists": [
+        "Alan Fitzpatrick",
+        "Frank Farrell",
+        "Rion S"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 189077,
+      "album": "Addict"
+    },
+    {
+      "name": "Feel The Pulse",
+      "id": "6l0VAs8qEzsGh1mqusoQQx",
+      "artists": [
+        "Mozey"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 200028,
+      "album": "Feel The Pulse"
+    },
+    {
+      "name": "Every Pan Has A Lid",
+      "id": "6JCNq3rH71vQRFPFKSlqot",
+      "artists": [
+        "SUCHI"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 314501,
+      "album": "Sub Cut"
+    },
+    {
+      "name": "Soulfriction",
+      "id": "1xy9UXjaryFOidweLy5P9P",
+      "artists": [
+        "FJAAK"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 285021,
+      "album": "FJAAK 014"
+    },
+    {
+      "name": "I'll Be",
+      "id": "6khESY1Thpr7mV54sZyEvU",
+      "artists": [
+        "Paleman"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 246713,
+      "album": "I'll Be"
+    },
+    {
+      "name": "Cream (Workout Techno Remix)",
+      "id": "3sEK0qZHZDMLQYGvGX68FK",
+      "artists": [
+        "GYMBRO",
+        "Ken"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 156000,
+      "album": "Cream"
+    },
+    {
+      "name": "Bite the Hand",
+      "id": "1XhuLzTH3GGF7wAyQDorZf",
+      "artists": [
+        "Jasm\u00edn"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 308266,
+      "album": "Bite the Hand That Feeds You"
+    },
+    {
+      "name": "Sassy Acid",
+      "id": "3fTk3mDr1BpkycZzuPvbu2",
+      "artists": [
+        "HYBRD",
+        "Alan Fitzpatrick"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 158519,
+      "album": "Career Advice"
+    },
+    {
+      "name": "B Effect",
+      "id": "1mnid00Xg2lw14KbCZQUkV",
+      "artists": [
+        "Ma Sha"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 211500,
+      "album": "Hydrofall"
+    },
+    {
+      "name": "Order In Chaos - Reactive Mix",
+      "id": "742YGl0HOzL7nUfcireyBu",
+      "artists": [
+        "Enrico Sangiuliano"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 467050,
+      "album": "Order In Chaos EP"
+    },
+    {
+      "name": "Become",
+      "id": "66qcSTxY5qbIR3nAAul3v5",
+      "artists": [
+        "Charlotte de Witte"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 510919,
+      "album": "Charlotte de Witte"
+    },
+    {
+      "name": "Hooked on the Bassline",
+      "id": "1XsCQKhLGFP714xLKHeLvZ",
+      "artists": [
+        "Gabry Ponte",
+        "Marie Vaunt"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 197600,
+      "album": "Hooked on the Bassline"
+    },
+    {
+      "name": "Two Glasses of Whisky",
+      "id": "1xbqhGI3Xgntoy56FA91D4",
+      "artists": [
+        "Maeksll"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 243413,
+      "album": "When Sun Glows Through Rain"
+    },
+    {
+      "name": "I Miss the Old Kanye",
+      "id": "4Dp9nzR0uz1gJsJICpmfzh",
+      "artists": [
+        "MARK BLAIR"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 255360,
+      "album": "I Miss the Old Kanye"
+    },
+    {
+      "name": "Real Thing",
+      "id": "0r1xyhS3iCP5jgGX63S25n",
+      "artists": [
+        "Patrik Berg"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 213088,
+      "album": "Real Thing"
+    },
+    {
+      "name": "Passion",
+      "id": "3LOA5jyHLpdcHT0CvtvcGO",
+      "artists": [
+        "Eskuche"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 201904,
+      "album": "Passion EP"
+    },
+    {
+      "name": "Tell Me",
+      "id": "3wE1c11pDVYtMKb0lgqGdN",
+      "artists": [
+        "Factory Floor"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 244054,
+      "album": "Tell Me"
+    },
+    {
+      "name": "Morse Code",
+      "id": "3TdlR1FN90tXc8Agsc1gP4",
+      "artists": [
+        "Hawkeys"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 176363,
+      "album": "Morse Code"
+    },
+    {
+      "name": "Give Me",
+      "id": "0g1ib1LE1XLP7Re6l2Yb38",
+      "artists": [
+        "Kink"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 278764,
+      "album": "Give Me"
+    },
+    {
+      "name": "Run To Me",
+      "id": "75fREdmU75rgGT3NW75Ebe",
+      "artists": [
+        "FJAAK"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 251285,
+      "album": "FJAAK 014"
+    },
+    {
+      "name": "Sol",
+      "id": "69sBDhhPHKyalh7pNT3LYO",
+      "artists": [
+        "Casey Club"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 165428,
+      "album": "Sol"
+    },
+    {
+      "name": "Kick",
+      "id": "1uRhUL8183ihhVSAur859T",
+      "artists": [
+        "The Dare"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 247269,
+      "album": "Freakquencies: Volume 1"
+    },
+    {
+      "name": "April - Daniel Avery Remix",
+      "id": "3hZbm0eUkx71vyD32A4YSP",
+      "artists": [
+        "Rose Gray",
+        "Daniel Avery"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 297000,
+      "album": "April (Daniel Avery Remix)"
+    },
+    {
+      "name": "Tufted",
+      "id": "1ARbInw7ro8CUJpws6PhuW",
+      "artists": [
+        "J.Manuel"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 286666,
+      "album": "SPANDAU20 010A"
+    },
+    {
+      "name": "And It Goes",
+      "id": "4CR5TNHxiJvS5heu5NcLJX",
+      "artists": [
+        "LO'99"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 175528,
+      "album": "And It Goes"
+    },
+    {
+      "name": "Beat Super Bumpin'",
+      "id": "7xi07xxvfRKryI7dQxVZ2L",
+      "artists": [
+        "Truth x Lies"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 192729,
+      "album": "Beat Super Bumpin'"
+    },
+    {
+      "name": "King Steps (Interplanetary Criminal Remix)",
+      "id": "0HhBiXAIb31CXqU1fFXAV0",
+      "artists": [
+        "Disclosure",
+        "Pa Salieu",
+        "Interplanetary Criminal"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 268665,
+      "album": "King Steps (Interplanetary Criminal Remix)"
+    },
+    {
+      "name": "9 Milli",
+      "id": "7ILNEgPoL4xDEQ75Q75tGH",
+      "artists": [
+        "Inside Kru",
+        "IsGwan",
+        "Prizefight",
+        "Waxx Off",
+        "Osmosis Jones"
+      ],
+      "preview_url": null,
+      "has_preview": false,
+      "duration_ms": 201829,
+      "album": "Representin' Inside"
+    }
+  ]
+}

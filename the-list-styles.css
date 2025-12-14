@@ -406,7 +406,7 @@
 }
 
 .player-controls {
-  display: flex;
+  display: none; /* Hidden - Currently Playing is read-only. Change to 'flex' when Web Playback SDK is working */
   align-items: center;
   gap: 20px;
   flex: 0 0 auto;

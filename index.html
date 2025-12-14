@@ -1227,15 +1227,16 @@ function initTable() {
         if ( $(this).hasClass('selected') ) {
             $(this).removeClass('selected');
             var row = songTable.row( $(this) );
-            // Stop track - handled by Web Playback SDK
+            // Stop track - handled by Web Playback SDK (disabled for now)
         } else {
             table.$('tr.selected').removeClass('selected');
             $(this).addClass('selected');
             var row = songTable.row( $(this) );
             var rowData = row.data();
             var track = rowData[rowData.length - 1];
-            // Play track using Web Playback SDK
-            playTrackOnSpotify(track.uri);
+            // NOTE: Playback disabled - Currently Playing display is read-only
+            // Uncomment below when Web Playback SDK is working:
+            // playTrackOnSpotify(track.uri);
         }
     } );
     return table;
@@ -1257,6 +1258,9 @@ async function handleOAuthCallback(queryParams) {
         } else {
             console.log('SDK not loaded yet, will initialize via onSpotifyWebPlaybackSDKReady callback');
         }
+
+        // Start polling for currently playing track
+        startCurrentlyPlayingPolling();
 
         // Clear the code from URL to prevent reuse
         window.history.replaceState({}, document.title, window.location.pathname);
@@ -1488,6 +1492,113 @@ function playTrackOnSpotify(trackUri) {
     }).catch(err => {
         console.error('Error starting playback:', err);
     });
+}
+
+// ============================================
+// Currently Playing Display (API-based)
+// ============================================
+
+var currentlyPlayingInterval = null;
+
+function fetchCurrentlyPlaying() {
+    if (!accessToken) {
+        return;
+    }
+
+    fetch('https://api.spotify.com/v1/me/player/currently-playing', {
+        headers: {
+            'Authorization': 'Bearer ' + accessToken
+        }
+    })
+    .then(response => {
+        if (response.status === 204 || response.status === 304) {
+            // No track currently playing
+            hideBottomPlayer();
+            return null;
+        }
+        if (!response.ok) {
+            console.error('Currently Playing API error:', response.status);
+            return null;
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data && data.item && data.is_playing) {
+            updatePlayerUIFromAPI(data);
+        } else {
+            hideBottomPlayer();
+        }
+    })
+    .catch(err => {
+        console.error('Error fetching currently playing:', err);
+    });
+}
+
+function updatePlayerUIFromAPI(data) {
+    if (!data || !data.item) {
+        hideBottomPlayer();
+        return;
+    }
+
+    const track = data.item;
+    const artists = track.artists.map(artist => artist.name).join(', ');
+    const albumArt = track.album.images[0]?.url || '';
+
+    // Update player UI
+    $('#player-album-art').attr('src', albumArt);
+    $('#player-track-name').text(track.name);
+    $('#player-artist-name').text(artists);
+
+    // Show device name
+    if (data.device && data.device.name) {
+        $('#player-device').text('Playing on: ' + data.device.name);
+    } else {
+        $('#player-device').text('Playing');
+    }
+
+    // Show progress (optional - format as MM:SS)
+    const currentTime = Math.floor(data.progress_ms / 1000);
+    const duration = Math.floor(track.duration_ms / 1000);
+    const currentMin = Math.floor(currentTime / 60);
+    const currentSec = String(currentTime % 60).padStart(2, '0');
+    const durationMin = Math.floor(duration / 60);
+    const durationSec = String(duration % 60).padStart(2, '0');
+    $('#player-progress').text(`${currentMin}:${currentSec} / ${durationMin}:${durationSec}`);
+
+    // Show the player
+    showBottomPlayer();
+}
+
+function showBottomPlayer() {
+    $('#bottom-player').show();
+    $('body').addClass('player-active');
+}
+
+function hideBottomPlayer() {
+    $('#bottom-player').hide();
+    $('body').removeClass('player-active');
+}
+
+function startCurrentlyPlayingPolling() {
+    // Stop any existing interval
+    if (currentlyPlayingInterval) {
+        clearInterval(currentlyPlayingInterval);
+    }
+
+    // Fetch immediately
+    fetchCurrentlyPlaying();
+
+    // Then poll every 5 seconds
+    currentlyPlayingInterval = setInterval(fetchCurrentlyPlaying, 5000);
+    console.log('✅ Started polling for currently playing track');
+}
+
+function stopCurrentlyPlayingPolling() {
+    if (currentlyPlayingInterval) {
+        clearInterval(currentlyPlayingInterval);
+        currentlyPlayingInterval = null;
+        console.log('⏹ Stopped polling for currently playing track');
+    }
 }
 
 $(document).ready(function() {
