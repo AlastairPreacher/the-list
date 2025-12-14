@@ -1212,7 +1212,9 @@ function initTable() {
         liveDrag: true,           // Show column resize while dragging
         gripInnerHtml: "<div class='grip'></div>",
         draggingClass: "dragging",
-        resizeMode: 'overflow'    // Columns can resize freely
+        resizeMode: 'overflow',   // Columns can resize freely
+        postbackSafe: true,       // Enable persistence across page reloads
+        useLocalStorage: true     // Store in localStorage (survives browser restart)
     });
 
     table.on('order.dt', function() {
