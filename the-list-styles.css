@@ -321,6 +321,30 @@
 }
 
 /* ============================================
+   Column Resize Grips
+   ============================================ */
+
+.grip {
+  width: 5px;
+  height: 100%;
+  cursor: col-resize;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.grip:hover {
+  background-color: rgba(29, 185, 84, 0.5); /* Spotify green on hover */
+}
+
+.dragging .grip {
+  background-color: #1db954; /* Spotify green while dragging */
+}
+
+/* Style for column headers during resize */
+#song-table th {
+  position: relative;
+}
+
+/* ============================================
    Responsive Adjustments
    ============================================ */
 

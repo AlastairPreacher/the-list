@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link type="text/css" href="styles.css?v1" rel="stylesheet" />
-    <link type="text/css" href="the-list-styles.css?v3" rel="stylesheet" />
+    <link type="text/css" href="the-list-styles.css?v4" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.13.1/datatables.min.css"/>
     <link href="dist/sp-bootstrap.min.css" rel="stylesheet" media="screen">
@@ -268,6 +268,9 @@
     <script src="lib/jquery-1.11.1.min.js"></script>
  
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.13.1/datatables.min.js"></script>
+
+    <!-- colResizable - Makes table columns user-resizable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/colresizable/1.6.0/colResizable-1.6.min.js"></script>
 
     <!-- Deprecated: Replacement is the datetime plug-in (http://datatables.net/blog/2014-12-18) -->
     <script type="text/javascript" charset="utf-8"
@@ -1203,6 +1206,14 @@ function initTable() {
                 { width: "300px", targets: 14 }, // Comments column
             ]
      });
+
+    // Make columns resizable by dragging - user can adjust column widths
+    $('#song-table').colResizable({
+        liveDrag: true,           // Show column resize while dragging
+        gripInnerHtml: "<div class='grip'></div>",
+        draggingClass: "dragging",
+        resizeMode: 'overflow'    // Columns can resize freely
+    });
 
     table.on('order.dt', function() {
         updateSaveButtonState();
