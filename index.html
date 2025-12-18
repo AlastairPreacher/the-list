@@ -497,6 +497,9 @@ function callSpotifyQ(type, url, json) {
 }
 
 function getSpotify(url, data, callback) {
+    console.log('🌐 Spotify API GET:', url);
+    console.log('🔑 Token exists:', !!accessToken, 'Length:', accessToken ? accessToken.length : 0);
+
     $.ajax(url, {
         dataType: 'json',
         data: data,
@@ -504,9 +507,25 @@ function getSpotify(url, data, callback) {
             'Authorization': 'Bearer ' + accessToken
         },
         success: function(r) {
+            console.log('✅ API Success:', url);
             callback(r);
         },
-        error: function(r) {
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.error('❌ API Error:', url);
+            console.error('Status:', jqXHR.status, textStatus);
+            console.error('Response:', jqXHR.responseText);
+            console.error('Error:', errorThrown);
+
+            // Store error details for debug mode
+            window.lastAPIError = {
+                url: url,
+                status: jqXHR.status,
+                statusText: textStatus,
+                error: errorThrown,
+                response: jqXHR.responseText,
+                hasToken: !!accessToken
+            };
+
             callback(null);
         }
     });
@@ -923,6 +942,41 @@ function fetchCurrentUserProfile(callback) {
     getSpotify(url, null, callback);
 }
 
+function fetchCurrentUserProfileWithRetry(callback, attemptNumber) {
+    attemptNumber = attemptNumber || 1;
+    const maxAttempts = 3;
+    const retryDelay = 1000; // 1 second
+
+    console.log(`📡 Fetching user profile (attempt ${attemptNumber}/${maxAttempts})`);
+    updateDebugPanel(`Fetching user profile (attempt ${attemptNumber}/${maxAttempts})`);
+
+    if (attemptNumber > 1) {
+        info(`Retrying... (attempt ${attemptNumber}/${maxAttempts})`);
+    }
+
+    fetchCurrentUserProfile(function(user) {
+        if (user) {
+            // Success!
+            console.log('✅ User profile loaded successfully');
+            updateDebugPanel('✅ User profile loaded successfully');
+            callback(user);
+        } else {
+            // Failed
+            if (attemptNumber < maxAttempts) {
+                console.warn(`⚠️ Attempt ${attemptNumber} failed, retrying in ${retryDelay}ms...`);
+                updateDebugPanel(`⚠️ Attempt ${attemptNumber} failed, retrying in ${retryDelay}ms...`);
+                setTimeout(function() {
+                    fetchCurrentUserProfileWithRetry(callback, attemptNumber + 1);
+                }, retryDelay);
+            } else {
+                console.error(`❌ All ${maxAttempts} attempts failed`);
+                updateDebugPanel(`❌ All ${maxAttempts} attempts failed - see error above`);
+                callback(null);
+            }
+        }
+    });
+}
+
 function goodPlaylist(playlist) {
     return playlist.tracks.total > 0; // && playlist.owner.id == curUserID;
 }
@@ -1259,20 +1313,30 @@ async function handleOAuthCallback(queryParams) {
             console.log('SDK not loaded yet, will initialize via onSpotifyWebPlaybackSDKReady callback');
         }
 
-        // Start polling for currently playing track
-        startCurrentlyPlayingPolling();
-
-        // Clear the code from URL to prevent reuse
-        window.history.replaceState({}, document.title, window.location.pathname);
-
         $(".worker").hide();
-        fetchCurrentUserProfile(function(user) {
+
+        // Fetch user profile with retry logic
+        // Move Currently Playing polling and history.replaceState to AFTER profile loads
+        // to avoid race conditions on iOS Safari
+        fetchCurrentUserProfileWithRetry(function(user) {
             if (user) {
+                console.log('✅ User logged in:', user.id);
                 curUserID = user.id;
                 $("#who").text(user.id);
+
+                // Clear the code from URL now that we've successfully loaded
+                window.history.replaceState({}, document.title, window.location.pathname);
+
+                // Start polling for currently playing track (after profile loads)
+                startCurrentlyPlayingPolling();
+
+                // Load playlists
                 loadPlaylists(user.id);
             } else {
-                error("Trouble getting the user profile");
+                error("Trouble getting the user profile. Please try refreshing the page.");
+                if (window.lastAPIError) {
+                    error("Error details: " + window.lastAPIError.status + " - " + window.lastAPIError.statusText);
+                }
             }
         });
     } catch (err) {
@@ -1601,8 +1665,77 @@ function stopCurrentlyPlayingPolling() {
     }
 }
 
+// ============================================
+// Debug Mode
+// ============================================
+
+var debugMode = false;
+
+function initDebugMode() {
+    // Check for ?debug=true in URL
+    var queryParams = parseQueryString();
+    debugMode = queryParams.debug === 'true';
+
+    if (debugMode) {
+        console.log('🐛 DEBUG MODE ENABLED');
+
+        // Add debug panel to page
+        var debugPanel = $('<div id="debug-panel"></div>');
+        debugPanel.css({
+            'position': 'fixed',
+            'top': '60px',
+            'right': '10px',
+            'background': '#000',
+            'color': '#0f0',
+            'padding': '15px',
+            'border': '2px solid #0f0',
+            'border-radius': '5px',
+            'font-family': 'monospace',
+            'font-size': '11px',
+            'max-width': '350px',
+            'z-index': '9999',
+            'max-height': '400px',
+            'overflow-y': 'auto'
+        });
+        debugPanel.html('<strong>🐛 DEBUG MODE</strong><br><small>Add ?debug=true to URL to enable</small><hr>');
+        $('body').append(debugPanel);
+
+        updateDebugPanel();
+    }
+}
+
+function updateDebugPanel(message) {
+    if (!debugMode) return;
+
+    var panel = $('#debug-panel');
+    if (panel.length === 0) return;
+
+    var info = '<strong>🐛 DEBUG INFO</strong><br>';
+    info += '📅 ' + new Date().toLocaleTimeString() + '<br>';
+    info += '🔑 Token: ' + (accessToken ? 'EXISTS (' + accessToken.length + ' chars)' : 'MISSING') + '<br>';
+    info += '👤 User ID: ' + (curUserID || 'Not loaded') + '<br>';
+
+    if (window.lastAPIError) {
+        info += '<hr><strong style="color: #f00;">❌ LAST ERROR:</strong><br>';
+        info += 'URL: ' + window.lastAPIError.url + '<br>';
+        info += 'Status: ' + window.lastAPIError.status + '<br>';
+        info += 'Message: ' + window.lastAPIError.statusText + '<br>';
+        info += 'Has Token: ' + window.lastAPIError.hasToken + '<br>';
+        if (window.lastAPIError.response) {
+            info += 'Response: ' + window.lastAPIError.response.substring(0, 100) + '<br>';
+        }
+    }
+
+    if (message) {
+        info += '<hr><strong>📝 MESSAGE:</strong><br>' + message + '<br>';
+    }
+
+    panel.html(info);
+}
+
 $(document).ready(function() {
         console.log("DEBUG: Document ready fired");
+        initDebugMode();
         songTable = initTable();
         var args = parseArgs();
         var queryParams = parseQueryString();
