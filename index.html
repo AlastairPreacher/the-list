@@ -1799,10 +1799,30 @@ function updateDebugPanel(message) {
 
 $(document).ready(function() {
         console.log("DEBUG: Document ready fired");
+
+        // ============================================
+        // DIAGNOSTIC: URL CHECK (shows after Spotify redirect)
+        // ============================================
+        var queryParams = parseQueryString();
+        // Only show diagnostic if there are query parameters (after redirect)
+        if (window.location.search) {
+            var diagnosticMsg = '🔍 URL DIAGNOSTIC\n\n';
+            diagnosticMsg += 'Full URL:\n' + window.location.href.substring(0, 80) + '...\n\n';
+            diagnosticMsg += 'Query string:\n' + window.location.search + '\n\n';
+            diagnosticMsg += 'Code parameter: ' + ('code' in queryParams ? 'YES ✅' : 'NO ❌') + '\n';
+            if ('code' in queryParams) {
+                diagnosticMsg += 'Code value: ' + queryParams.code.substring(0, 20) + '...';
+            }
+            if ('error' in queryParams) {
+                diagnosticMsg += '\nError parameter: ' + queryParams.error;
+            }
+            alert(diagnosticMsg);
+        }
+        // ============================================
+
         initDebugMode();
         songTable = initTable();
         var args = parseArgs();
-        var queryParams = parseQueryString();
 
         console.log("DEBUG: Query params:", queryParams);
         console.log("DEBUG: Has code?", 'code' in queryParams);
