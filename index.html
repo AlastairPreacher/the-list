@@ -389,12 +389,21 @@ async function exchangeCodeForToken(code) {
     console.log('🔄 Starting token exchange...');
     console.log('📋 Authorization code:', code ? code.substring(0, 20) + '...' : 'MISSING');
 
+    // DIAGNOSTIC: Show user what's happening
+    alert('🔄 Token Exchange Starting\n\nAuth code: ' + (code ? 'EXISTS' : 'MISSING'));
+
     // Try localStorage first (iOS Safari compatible), fallback to sessionStorage
     const codeVerifier = localStorage.getItem('pkce_code_verifier') || sessionStorage.getItem('pkce_code_verifier');
-    console.log('🔑 Code verifier from storage:', codeVerifier ? 'EXISTS (' + codeVerifier.length + ' chars)' : 'MISSING');
-    console.log('📍 Retrieved from:', localStorage.getItem('pkce_code_verifier') ? 'localStorage' : (sessionStorage.getItem('pkce_code_verifier') ? 'sessionStorage' : 'NOWHERE'));
+    const storageSource = localStorage.getItem('pkce_code_verifier') ? 'localStorage' : (sessionStorage.getItem('pkce_code_verifier') ? 'sessionStorage' : 'NOWHERE');
 
-    if (!codeVerifier) {
+    console.log('🔑 Code verifier from storage:', codeVerifier ? 'EXISTS (' + codeVerifier.length + ' chars)' : 'MISSING');
+    console.log('📍 Retrieved from:', storageSource);
+
+    // DIAGNOSTIC: Show code verifier status
+    if (codeVerifier) {
+        alert('✅ Code Verifier Found!\n\nSource: ' + storageSource + '\nLength: ' + codeVerifier.length + ' chars');
+    } else {
+        alert('❌ CODE VERIFIER MISSING!\n\nChecked:\n- localStorage: ' + (localStorage.getItem('pkce_code_verifier') ? 'found' : 'not found') + '\n- sessionStorage: ' + (sessionStorage.getItem('pkce_code_verifier') ? 'found' : 'not found'));
         const error = 'Code verifier not found in storage (iOS Safari may have cleared sessionStorage during redirect)';
         console.error('❌', error);
         updateDebugPanel('❌ ' + error);
@@ -424,6 +433,10 @@ async function exchangeCodeForToken(code) {
 
     if (data.access_token) {
         console.log('✅ Token received! Length:', data.access_token.length);
+
+        // DIAGNOSTIC: Confirm token received
+        alert('✅ TOKEN RECEIVED!\n\nLength: ' + data.access_token.length + ' chars\n\nProceeding to load app...');
+
         // Clear the code verifier from both storages
         localStorage.removeItem('pkce_code_verifier');
         sessionStorage.removeItem('pkce_code_verifier');
@@ -432,6 +445,10 @@ async function exchangeCodeForToken(code) {
     } else {
         const errorMsg = 'Failed to exchange code for token: ' + (data.error_description || data.error || JSON.stringify(data));
         console.error('❌ Token exchange failed:', errorMsg);
+
+        // DIAGNOSTIC: Show token exchange failure
+        alert('❌ TOKEN EXCHANGE FAILED!\n\nSpotify Response:\n' + (data.error || 'Unknown error') + '\n\n' + (data.error_description || 'No description'));
+
         updateDebugPanel('❌ Token exchange failed: ' + errorMsg);
 
         // Store error for debug display
