@@ -15,6 +15,7 @@ const firebaseConfig = {
 // Global Firebase references (will be set once modules load)
 let firebaseApp = null;
 let database = null;
+let auth = null;
 let firebaseRef = null;
 let firebaseSet = null;
 let firebaseGet = null;
@@ -24,13 +25,19 @@ let firebaseOnValue = null;
 window.initializeFirebase = function() {
   return import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js')
     .then((firebaseModule) => {
-      return import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js')
-        .then((databaseModule) => {
+      return Promise.all([
+        import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js'),
+        import('https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js')
+      ])
+        .then(([databaseModule, authModule]) => {
           // Initialize Firebase app
           firebaseApp = firebaseModule.initializeApp(firebaseConfig);
 
           // Get database reference
           database = databaseModule.getDatabase(firebaseApp);
+
+          // Get auth reference
+          auth = authModule.getAuth(firebaseApp);
 
           // Store module functions globally
           firebaseRef = databaseModule.ref;
@@ -39,7 +46,18 @@ window.initializeFirebase = function() {
           firebaseOnValue = databaseModule.onValue;
 
           console.log("Firebase initialized successfully");
-          return true;
+
+          // Sign in anonymously (required for security rules)
+          return authModule.signInAnonymously(auth)
+            .then(() => {
+              console.log("✅ Signed in anonymously to Firebase");
+              return true;
+            })
+            .catch((error) => {
+              console.error("❌ Error signing in anonymously:", error);
+              // Still return true - app can function without auth in emergency
+              return true;
+            });
         });
     })
     .catch((error) => {
