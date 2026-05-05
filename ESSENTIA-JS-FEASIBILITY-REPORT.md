@@ -318,7 +318,7 @@ Even if Essentia.js is technically capable, the lack of reliable audio access ma
 - Cannot customise analysis
 - Deprecated features (energy, danceability) may not return
 
-**Status:** Already explored in [[AUDIO-FEATURES-ALTERNATIVES-RESEARCH.md]]
+**Status:** Already explored in [[Research]]
 
 ### 4. Meyda.js (Client-Side Alternative)
 
@@ -356,7 +356,7 @@ Essentia.js is an **excellent library with powerful capabilities**, but **Spotif
 - Rely entirely on Spotify's Audio Features API
 - Accept limited feature set
 - Focus on features that still work (valence, acousticness, instrumentalness)
-- See [[AUDIO-FEATURES-ALTERNATIVES-RESEARCH.md]] for details
+- See [[Research]] for details
 
 **Option 3: Wait for Policy Change**
 - Monitor Spotify Developer Blog
@@ -380,9 +380,9 @@ Essentia.js is an **excellent library with powerful capabilities**, but **Spotif
 - GitHub Workaround: https://github.com/rexdotsh/spotify-preview-url-workaround
 
 ### Related Research
-- [[AUDIO-FEATURES-ALTERNATIVES-RESEARCH.md]]
-- [[CLIENT-SIDE-AUDIO-ANALYSIS-LIBRARIES-RESEARCH.md]]
-- [[SESSION-HANDOFF-13-12-2025.md]]
+- [[Research]]
+- [[Research]]
+- [[SESSION-HANDOFF]]
 
 ---
 

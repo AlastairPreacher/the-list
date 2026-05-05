@@ -1,3 +1,14 @@
+---
+tags:
+  - personal
+  - tech
+  - spotify
+  - project
+  - firebase
+  - web-development
+created: 2025-12-13
+---
+
 # The List - Collaborative Spotify Playlist Rating & Commenting
 
 A collaborative playlist curation tool that extends the functionality of SortYourMusic with real-time ratings and comments synced via Firebase.
@@ -107,20 +118,40 @@ the-list/
 3. Enable GitHub Pages in repository settings
 4. Share the GitHub Pages URL with your friend!
 
-### Configure Firebase Security Rules (Optional but Recommended)
+### Configure Firebase Security Rules ⚠️ REQUIRED
 
-Currently using test mode (anyone can read/write). For production:
+**IMPORTANT:** Test mode rules expire 30 days after creation. You must update security rules to prevent database lockout.
 
-1. Go to Firebase Console → Realtime Database → Rules
-2. Update rules to restrict access:
+#### Quick Fix (Copy-Paste Method)
+
+1. Click "Edit rules" in the Firebase warning email, OR
+2. Go to: https://console.firebase.google.com/project/the-list-13e1c/database/the-list-13e1c-default-rtdb/rules
+3. Copy the contents of `firebase-rules.json` file (in this directory)
+4. Paste into the Firebase Console rules editor
+5. Click "Publish"
+
+#### What These Rules Do
+
+- ✅ Allow public read/write access to ratings, comments, and averages
+- ✅ Organised structure under playlists → tracks
+- ✅ No expiration (rules stay active indefinitely)
+- ⚠️ Still public access - anyone with the URL can read/write
+
+#### More Secure Rules (Future Enhancement)
+
+For production with user authentication, you could restrict writes:
 
 ```json
 {
   "rules": {
     "playlists": {
       "$playlistId": {
-        ".read": true,
-        ".write": true
+        "tracks": {
+          "$trackId": {
+            ".read": true,
+            ".write": "auth != null"
+          }
+        }
       }
     }
   }

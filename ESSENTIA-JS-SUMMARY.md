@@ -58,7 +58,7 @@ Essentia.js is useless without audio input
 **Option 2: Give Up Client-Side Analysis**
 - Use Spotify's existing Audio Features API
 - Limited features (no energy, danceability)
-- See: [[AUDIO-FEATURES-ALTERNATIVES-RESEARCH.md]]
+- See: [[Research]]
 
 **Option 3: Wait for Spotify Policy Change**
 - Monitor developer blog
@@ -66,4 +66,4 @@ Essentia.js is useless without audio input
 
 ---
 
-**Full Report:** [[ESSENTIA-JS-FEASIBILITY-REPORT.md]]
+**Full Report:** [[ESSENTIA-JS-FEASIBILITY-REPORT]]

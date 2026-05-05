@@ -1,3 +1,12 @@
+---
+tags:
+  - personal
+  - guide
+  - troubleshooting
+  - implementation
+created: 2026-01-10
+---
+
 # Firebase Security Fix - URGENT (3 days to fix)
 
 ## What Changed

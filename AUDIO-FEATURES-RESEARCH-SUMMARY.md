@@ -1,3 +1,13 @@
+---
+tags:
+  - personal
+  - tech
+  - spotify
+  - research
+  - audio-features
+created: 2025-12-14
+---
+
 # Audio Features Research Summary - "The List" Playlist App
 
 **Date:** 14 December 2025

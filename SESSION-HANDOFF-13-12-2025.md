@@ -1,3 +1,13 @@
+---
+tags:
+  - personal
+  - tech
+  - spotify
+  - session-handoff
+  - project
+created: 2025-12-13
+---
+
 # Session Handoff - 13 December 2025 (17:45)
 
 ## Quick Status

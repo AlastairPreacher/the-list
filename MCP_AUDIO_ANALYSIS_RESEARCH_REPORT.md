@@ -1,3 +1,13 @@
+---
+tags:
+  - personal
+  - tech
+  - spotify
+  - research
+  - mcp
+created: 2025-12-14
+---
+
 # MCP Audio Analysis Server Research Report
 ## Testing Feasibility for Spotify Preview URL Analysis
 

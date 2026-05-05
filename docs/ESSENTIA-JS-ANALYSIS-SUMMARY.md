@@ -338,7 +338,7 @@ const danceability = essentia.Danceability(audioBuffer);
 
 ## Project Context
 
-**Parent Project**: [[the-list]] - Spotify playlist rating application
+**Parent Project**: [[E]] - Spotify playlist rating application
 
 **Related Documents**:
 - [[PLAN-14-12-2025-1430-essentia-js-spotify-preview-analysis]] - Full research plan

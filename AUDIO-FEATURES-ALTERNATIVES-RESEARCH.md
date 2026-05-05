@@ -1,3 +1,13 @@
+---
+tags:
+  - personal
+  - tech
+  - spotify
+  - research
+  - alternatives
+created: 2025-12-14
+---
+
 # Audio Features Alternatives Research Report
 **Date:** 14 December 2025
 **Project:** The List (Spotify Playlist Rating App)

@@ -1,3 +1,13 @@
+---
+tags:
+  - personal
+  - tech
+  - spotify
+  - session-handoff
+  - project
+created: 2025-12-14
+---
+
 # Session Handoff - 14 December 2025 (Evening)
 
 **App Status:** ✅ Working (all core features functional)

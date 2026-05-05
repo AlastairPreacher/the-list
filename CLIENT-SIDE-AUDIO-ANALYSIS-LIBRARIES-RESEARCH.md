@@ -1,3 +1,13 @@
+---
+tags:
+  - personal
+  - tech
+  - spotify
+  - research
+  - audio-analysis
+created: 2025-12-14
+---
+
 # Client-Side JavaScript Audio Analysis Libraries Research
 
 **Research Date:** 14-12-2025

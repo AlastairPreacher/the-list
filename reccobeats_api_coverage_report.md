@@ -1,3 +1,13 @@
+---
+tags:
+  - personal
+  - tech
+  - spotify
+  - analysis
+  - api
+created: 2025-12-14
+---
+
 # ReccoBeats API Coverage Report: "Murder on the Dancefloor" Playlist
 
 **Date:** 14-12-2025
